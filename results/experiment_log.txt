@@ -1,0 +1,28 @@
+================================================================================
+MACHINE LEARNING EXPERIMENTATION LOG
+================================================================================
+Generated on: 2026-05-30 23:42:57
+Dataset: UCI Breast Cancer / Heart Disease Benchmark Evaluation
+
+[EXPERIMENTAL SETUP]
+- Train/Test Split   : 80% Train / 20% Test (Stratified)
+- Preprocessing      : Standard Robust Scaling & PCA (Principal Component Analysis)
+- Total Models       : 45 configurations evaluated
+
+[FEATURE ENGINEERING & DIMENSIONALITY REDUCTION]
+- PCA implementation loaded to reduce feature multi-collinearity.
+- Models like 'LogReg_PCA10' evaluate performance in low-dimensional orthogonal spaces.
+
+[TOP PERFORMING CHAMPION MODEL]
+Model Name : LogReg_gd_fixed
+Metrics:
+  - Accuracy  : 98.23%
+  - Precision : 97.62%
+  - Recall    : 97.62%
+  - F1-Score  : 97.62%
+  - Specificity: 98.59%
+
+[OPTIMIZATION OBSERVATIONS]
+- Second-order methods (Newton-Raphson) exhibit rapid quadratic convergence within 10-15 iterations.
+- Projecting data via PCA retains high variance while discarding noisy, highly correlated dimensions, preventing gradient explosion.
+================================================================================

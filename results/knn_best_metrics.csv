@@ -1,0 +1,9 @@
+Metric,Value
+Nom_Modele,KNN_from_scratch
+K_optimal,9
+Metric_Distance,euclidean
+Accuracy,0.9646
+Vrais_Negatifs_TN,68
+Faux_Positifs_FP,3
+Faux_Negatifs_FN,3
+Vrais_Positifs_TP,39
